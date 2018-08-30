@@ -1,0 +1,26 @@
+# T-Solution 버전: V3.510.000.001  
+
+1. 배포 대상 고객사  
+    (1) "EURO.TS.TECH" 포함한 국내 고객 전체  
+    (2) MPIQC(캐나다)  
+
+2. 주요 조치/개선 항목(상세 내용 Release 노트 참조)  
+    (1) (결함 조치) [Multi Component] T-Studio 만 Upgrade 했을때, Version Mismatch 오류 발생  
+    (2) (결함 조치) [MPIQC] [PP] 계획 수량 만큼 생산 했는데, Split-Done으로 표시되는 현상  
+    (3) (개선/신규) DECAN S1 추가  
+    (4) (개선/신규)  T-Mobile 및 T-Feeder 용 Reel 정보 DB 저장 기능 개발  
+
+3. Machine SW Version  
+    (1)  ExcenPro(M)       : 1.760 (LED 向)  
+    (2)  ExcenPro(D)       : 2.100  
+    (3)  ExcenFlex         : 2.400  
+    (4)  SM400             : 3.901.000.007_NJob_Patch_T18  
+    (5)  SM400 Plus        : 4.510.006  
+    (6)  SM481/482         : 4.430.000.017_NJob_Patch_T18  
+    (7)  SM485P 	       : 2.000.SP2_E03  
+    (8)  DECAN F2          : 5.400.SP7  
+    (9)  DECAN L Series    : 6.200.SP2  
+    (10) DECAN S1          : 5.500.000.004  
+
+4. 기타 특이 사항/주의사항  
+    (1) T-Solution 이 설치되는 PC 의 OS 는 Win7(Service Pack 1) 이상이어야 함(Win XP 에서는 동작 안됨)  
