@@ -1,0 +1,367 @@
+T-Solution ¹öÀü: V3.510.000.001
+
+	1. Release Target Site: All customers including 
+		(1) All Korean customers including "EURO.TS.TECH"
+		(2) MPIQC(CANADA)
+
+	2. Released items
+		(1) (Resolved) [Multi Component] When Upgrading only T-Studio, Version Mismatch Error is occurred
+		(2) (Resolved) [MPIQC] [PP] A job is produced as many as planned count, the job status is displayed as Split-Done
+		(3) (Improve)  Add new machine "DECAN S1:
+		(4) (Improve)  Add new function "Save Reed info to DB" for T-Mobile and T-Feeder
+
+	3. Machine SW Version
+		(1)  ExcenPro(M)       : 1.760 (LED ú¾)
+		(2)  ExcenPro(D)       : 2.100
+		(3)  ExcenFlex         : 2.400
+		(4)  SM400             : 3.901.000.007_NJob_Patch_T18
+		(5)  SM400 Plus        : 4.510.006
+		(6)  SM481/482         : 4.430.000.017_NJob_Patch_T18
+		(7)  SM485P 	       : 2.000.SP2_E03
+		(8)  DECAN F2          : 5.400.SP7
+		(9)  DECAN L Series    : 6.200.SP2
+		(10) DECAN S1          : 5.500.000.004
+
+	4. Cautions
+		(1) The PC OS for T-Solution(Server, T-OLP, etc) must be Win7(Service Pack 1) or higher
+
+T-Solution ¹öÀü: V3.500.000.003
+
+	1. Release Target Site: All customers including 
+		(1) MPIQC
+		(2) LENZE
+		(3) RIM-T
+		(4) SOLU-M
+		(5) Multi Component
+		(6) Birkholz
+		(7) Whajoae
+		(8) OSTEC
+		(9) Foursiem
+
+	2. Released items
+		(1)  (Resolved) [MPIQC] When doing "Force Finish", "Actual End Date" is not updated
+		(2)  (Resolved) [MPIQC] When production finish, the production status is "PLANNED" rather than "DONE"
+		(3)  (Resolved) [MPIQC] When same LotCode is used for Top/Bottom Job, the job is disapeared from Plan List on Line OLP
+		(4)  (Resolved) [MPIQC] T-Feeder is slow down
+		(5)  (Resolved) [MPiQC] Feeder Indexing or ¢©PUSH¢© Count at the Machines vs T-OLP 
+		(6)  (Resolved) [MPIQC] Cycle Time is not matched
+		(7)  (Resolved) [LENZE] Optimization attains balanced result in 3 minutes but ran for another 1 hour and 44 minutes
+		(8)  (Resolved) [LENZE] LineOLP System Update failed. If we retry 2~3 times then work fine.
+		(9)  (Resolved) [LENZE] LineOLP Job is current, M1,M2,M3 are installed and restared as untitled. Auto PCB is done in M2,M3 but not in M1
+		(10) (Resolved) [LENZE] When not downloaded job of MultiJobs is clicked still UI is disabled. 
+		(11) (Resolved) [LENZE] transfer barcode mark in ON issue
+		(12) (Resolved) [RIM-T] 12.8mm size component can not be allocated to SM421 16M Flying Cam
+		(13) (Resolved) [RIM-T] Part Duplicate is not work
+		(14) (Resolved) [RIM-T] When job create after PCB import, the status for M2 is optimized (The actually status is "not optimized")
+		(15) (Resolved) [RIM-T] The polygon component can not be allocated applicable to tray
+		(16) (Resolved) [SOLU-M] Barcode printed by SPMM cannot be recognized(Reel barcode is recognized well)
+		(17) (Resolved) [SOLU-M] The barcode is truncated
+		(18) (Resolved) [Whajoae] The placement sequence of LED blard is abnormal
+		(19) (Resolved) [OSTEC] When Importing UPD, OLP js hang-up
+		(20) (Resolved) [Foursiem] [VOC-20171192] When Optimizer mode is Deep on SM481L PLUS, the production Step sequence is abnormal
+		(21) (Resolved) Not Supported System version¡® error message is occured on LineOLP
+		(22) (Improve)  [SM485P] Virtual Part: the optimizer keep the sequence made by user
+		(23) (Improve)  [SM485P] Radial Feeder is added
+		(24) (Improve)  [SM485P] 3 SGR_User nozzle is added
+		(25) (Improve)  [SM485P] Pre-Motion function is added
+		(26) (Improve)  [SM485P] The maximum Stick Feeder Unit is enlarged to 32
+		(27) (Improve)  [SM485P] The maximum Block nu,ber is enlarged to 10
+		(28) (Improve)  [Multi Component] Production Summary default change to CPH.
+		(29) (Improve)  [Multi Component] The Cycle time of Cycle-Head view does not refreshed on the Optimization  result view.
+		(30) (Improve)  [MPIQC] When Stick Feeder is multiple, they are evenly distributed
+		(31) (Improve)  [MPIQC] Job Clear: Production Count control as added
+		(32) (Improve)  [LENZE] Wants LineBased Pre-BOM check  for LineController with iTAC - including result view improvement
+		(33) (Improve)  [LGEMA] [MultiJObÃÖÀûÈ­] Even optimization is failed during incremental(All) optimization, the intermediate result is saved
+		(34) (Improve)  [OSTEC]: Optimizer issue twin and takes more than 20 min
+		(35) (Improve)  [SOLU-M] The barcode space is enlarged to add 'Waste Date"
+		(36) (Improve)  [AEGIS]  "Stored Procedure + View Table" is splied for MES Interface relating Traceability
+		(37) (Improve)  [Optimizer] Very Quick Option is chaned as Quick
+		(38) (Improve)  [Birkholz] When Pick Type is not defined, the error message is predispled before optimization
+		(39) (Improve)  When Click "Studio > LM >  IP or Machine Name" the control as editable
+
+
+	3. Machine SW Version
+		(1) ExcenPro(M)       : 1.760 (LED ú¾)
+		(2) ExcenPro(D)       : 2.100
+		(3) ExcenFlex         : 2.400
+		(4) SM481/482         : 4.430.000.017_NJob_Patch_T18
+		(5) SM400             : 3.901.000.007_NJob_Patch_T18
+		(6) SM400 Plus        : 4.510.006
+		(7) DECANF2           : 5.400.SP7
+		(8) DECAN L Series    : 6.200.SP2
+
+	4. Cautions
+		(1) The PC OS for T-Solution(Server, T-OLP, etc) must be Win7(Service Pack 1) or higher
+
+T-Solution ¹öÀü: V3.400.E05.001
+
+	1. Release Target Site: All customers including 
+		(1) SOLU-M
+		(2) RIM-T
+
+
+	2. Released items
+		(1) (Resolved) [SOLU-M] Barcode printed by SPMM cannot be recognized(Reel barcode is recognized well)
+		(2) (Resolved) [SOLU-M] The barcode is truncated
+		(3) (Resolved) [RIM-T] After PCB import, the status for M2 is optimized (The actually status is "not optimized")
+		(4) (Resolved) [RTM-T] Polygon component is not allocated on Tray
+		(5) (Resolved) [LENZE] Transfer barcode mark in ON issue
+		(6) (Resolved) [LENZE]LineOLP System Update failed. If we retry 2~3 times then work fine.
+		(7) (Improve) [SOLU-M] Discard date column is added to SPMM barcode layout
+		(8) (Improve) [LENZE] LineBased Pre-BOM check for LineController with iTAC
+
+
+	3. Machine SW Version
+		(1) ExcenPro(M)       : 1.760 (LED ú¾)
+		(2) ExcenPro(D)       : 2.100
+		(3) ExcenFlex         : 2.400
+		(4) SM481/482         : 4.430.000.017_NJob_Patch_T18
+		(5) SM400             : 3.901.000.007_NJob_Patch_T18
+		(6) SM400 Plus        : 4.510.006
+		(7) DECANF2           : 5.400.SP7
+		(8) DECAN L Series    : 6.200.SP2
+
+	4. Cautions
+		(1) The PC OS for T-Solution(Server, T-OLP, etc) must be Win7(Service Pack 1) or higher
+		(2) T-Solution can be installed only when the Computer is connected on Internet
+
+T-Solution ¹öÀü: V3.400.E04.001
+
+	1. Release Target Site: All customers including 
+		(1) Motorola
+		(2) CROUSE
+		(3) Ostec
+
+	2. Released items
+		(1) (Resolved) When Feeder Pitch Cycle Check issue is dealed by WARNING.
+		(2) (Resolved) [Motorola] NON SPLIT ERROR occurs when TRAY part without skipped point
+		(3) (Resolved) [Motorola] When Camera Auto is set to the part information of T-Solution, the lighting value is changed to 0,0,0
+		(4) (Resolved) [Motorola] SupplyAngle with 45 degrees. feeder pitch cycle error is occured.
+		(5) (Resolved) [Motorola] When tray part (tray is pre-arranged) without placements is not skipped, If & AutoSplit option = 0, LB error occurs
+		(6) (Resolved) [Crouse] 1st pin position display error
+		(7) (Resolved) [Ostec] Reel DB can not be deleted from T-Part Problem
+
+	3. Machine SW Version
+		(1) ExcenPro(M)       : 1.760 (LED ú¾)
+		(2) ExcenPro(D)       : 2.100
+		(3) ExcenFlex         : 2.400
+		(4) SM481/482         : 4.430.000.017_NJob_Patch_T18
+		(5) SM400             : 3.901.000.007_NJob_Patch_T18
+		(6) SM400 Plus        : 4.510.006
+		(7) DECANF2           : 5.400.SP7
+		(8) DECAN L Series    : 6.200.SP2
+
+	4. Cautions
+		(1) The PC OS for T-Solution(Server, T-OLP, etc) must be Win7(Service Pack 1) or higher
+		(2) T-Solution can be installed only when the Computer is connected on Internet
+
+T-Solution Version: V3.400.E03.002
+
+	1. Release Target Site: All customers including 
+		(1) Phytec
+		(2) SVI
+		(3) LENZE
+		(4) Henny Penny
+		(5) MPiQC
+		(6) Wharui
+		(7) Forsiam
+		(8) EVER ELETTRONICA
+		(9) SIEL
+		(10) Qmtech
+		(11) Newhightech
+		(12) Yousung Electronics
+
+
+	2. Released items
+		(1) (Resolved) [Newhightech] "Placement is out of board" Message occured
+		(2) (Resolved) [Wharui]EXCEN PRO LED Sequence issue
+		(3) (Resolved) [Phytec][Optimizer] Optimization is not optimal in Multijobs 
+		(4) (Resolved) [SM485P] NPE: Impossible to select laser light
+		(5) (Resolved) [EVER ELETTRONICA][T-Studio] cannot search ¢©/¢© in part name
+		(6) (Resolved) [SIEL] ExcenPro Fiducial error.(Fiducial Number :0)
+		(7) (Resolved) [Qmtech] Z value is cahnaged
+		(8) (Resolved) [MPiQC] Total Size of leaded part cannot be changed
+		(9) (Improve) [Phytec] 2D barcode in the Step
+		(10) (Improve) [Phytec] LineID is added in line configuration info
+		(11) (Improve) [Phytec]Remove CC for Pitch check when feeder is Non-Elec feeder.
+		(12) (Improve) [MPiQC] Special nozzle is added(Maximum 10 EA) for SM481/482 machied
+		(13) (Improve) [LENZE][ITS][Improve]Usability, after deleting the last reelcode then scrool moves to 1st row. Need to retain the previous selection.
+		(14) (Improve) [LENZE] Wants LineBased Pre-BOM check  for LineController with iTAC
+		(15) (Improve) [SVI]  t it Basic: Batch / Running information is added
+		(16) (Improve) [Henny Penny] 806 component parts pitch has no CC error in T-Sol but SM471 machine gives error
+
+
+	3. Compatible Machine SW Version
+		(1) ExcenPro(M)       : 1.760 (LED ú¾)
+		(2) ExcenPro(D)       : 2.100
+		(3) ExcenFlex         : 2.400
+		(4) SM481/482         : 4.430.000.017_NJob_Patch_T18
+		(5) SM400             : 3.901.000.007_NJob_Patch_T18
+		(6) SM400 Plus        : 4.510.006
+		(7) DECANF2           : 5.400.SP7
+		(8) DECAN L Series    : 6.200.SP2
+
+	4. Cautions
+		(1) The PC OS for T-Solution(Server, T-OLP, etc) must be Win7(Service Pack 1) or higher
+		(2) T-Solution can be installed only when the Computer is connected on Internet
+
+T-Solution Version: V3.400.E02.004
+
+	1. Release Target Site: All customers including 
+		(1) Æ¼¿£¸¶ ¿þÀÌ»ç
+		(2) LGEMA
+		(3) Birkholz
+		(4) Bestronics
+		(5) SMTech
+		(6) SAM Electornics
+		(7) ÇÏÀÌ½Å
+		(8) ¿¡ÅØ
+		(9) SVI
+		(10) LENZE
+
+	2. Released items
+		(1) (Resolved) Excen Pro Non-Independent Mode: Optimization failed with 2 Side Trays
+		(2) (Resolved) Remove Y Offset Check for Rank Option
+                (3) (Resolved) Drag & Drop failed for unregistered parts
+                (4) (Resolved) During PCB Importing, the source and target is reversed
+                (5) (Resolved) The setup file for [Feeder Work Station] and [IT Settup Tool] does not include "PCI DNMB Driver"
+                (6) (Resolved) Change of the Centroid Offset is not saved
+                (7) (Resolved) The report of the part description is truncated
+                (8) (Resolved) The DECAN system cannot be updated
+                (9) (Resolved) The default system of data of the DECAN F2 is corrected (Max part size: 16mm ==> 12mm)
+		(10) (Improve) Support Windows 10 OS
+		(13) (Improve) Automation of Part library is added for SM Series machines
+		(14) (Improve) Selection of Line DB is added on import window
+		(15) (Improve) Changed design to allow to import and add new block from different file (TXT, Excel)
+		(17) (Improve) LED Rank function is added for Tantal
+		(18) (Improve) ReelCode if not found in Hanwha DB then auto register from iTAC
+		(19) (Improve) Double scan barcode fail to inspect when there is gap inbetween the panel
+		(20) (Improve) Check the count of tray component" message is displayed when fill tray and scanned a tray barcode
+		(21) (Improve) Wants Stick/Tray Same Lot code in Multiple Slots for the same part name.
+
+
+	3. Compatible Machine SW Version
+		(1) ExcenPro(M)       : 1.760 (LED ú¾)
+		(2) ExcenPro(D)       : 2.100
+		(3) ExcenFlex         : 2.400
+		(4) SM481/482         : 4.430.000.017_NJob_Patch_T18
+		(5) SM400             : 3.901.000.007_NJob_Patch_T18
+		(6) SM400 Plus        : 4.510.006
+		(7) DECANF2           : 5.400.SP7
+		(8) DECAN L Series    : 6.200.SP2
+
+	4. Cautions
+		(1) The PC OS for T-Solution(Server, T-OLP, etc) must be Win7 or higher
+		(2) T-Solution can be installed only when the Computer is connected on Internet
+
+T-Solution Version: V3.400.E01.001
+
+	1. Release Target Site: All customers including 
+		(1) ÇÏÁö¿¡
+                (2) SMTech
+                (3) LGEMA
+                (4) SAMEX
+		(5) TSTO
+		(6) SVI
+		(7) LENZE
+
+	2. Released items
+                (1) (Resolved) Auto-Teach Failed for BGA
+		(2) (Resolved) T-BasicFeeder does not support SME 88mm
+		(3) (Resolved) T-Basic Feeder does not support DNMB
+		(4) (Resolved) New Job is not displyed on StartPage
+		(5) (Resolved) Apply dynsmic loding of Gerber fils
+		(6) (Resolved) When use Use2Tray on 411F Cycle NG occured
+		(7) (Resolved) Nozzle is numerically display on Step view
+		(8) (Resolved) Stored procedure is not installed automatically
+		(9) (Improve) System Version Up for EXCEN PRO and SM(SM471Plus) series (Apply SW license policy)
+		(10) (Improve) Slot + container not found message improvement
+		(11) (Improve) Interlock machine
+		(12) (Improve) matching of Global/Local 2D barcode 
+
+	3. Compatible Machine SW Version
+		(1) ExcenPro(M)       : 1.760 (LED ú¾)
+		(2) ExcenPro(D)       : 2.100
+		(3) ExcenFlex         : 2.400
+		(4) SM481/482         : 4.430.000.017_NJob_Patch_T18
+		(5) SM400             : 3.901.000.007_NJob_Patch_T18
+		(6) SM400 Plus        : 4.510.006
+		(7) DECANF2           : 5.400.SP7
+		(8) DECAN L Series    : 6.200.SP2
+
+	4. Cautions
+		(1) The PC OS for T-Solution(Server, T-OLP, etc) must be Win7 or higher
+		(2) N'Job Dlowload fuction is avaiable only for SM411/SM481/SM482
+		(3) Release Note Format is changed from v3.310.E11 (3.310.E10 Release Note is attached)
+
+
+T-Solution Version: V3.400.000.008
+
+	1. Release Target Site
+		All customers including 
+		(1) LGEMA (VOC: Line DB)
+		(2) HTS (VOC: Even and Random LED Distribution)
+
+	2. Released items
+		(1) [PHYTEC] (Resolved) 2D-Label-Feeder for rear Gantry in Slot R53 first, then an message appears that is not easy to read
+		(2) [PHYTEC] (Resolved) During PCB import not to assign machine automatically
+		(3) [PHYTEC] (Resolved) Delete recusively for cutomer but manay boards
+		(4) [PHYTEC] (Resolved) Missing Pin reset issue
+		(5) [PHYTEC] (Resolved) Flux device on master is not saved
+		(6) [PHYTEC] (Improve) [T-Feeder][T-BasicFeeder] Apply administrator' permission
+		(7) [PHYTEC] (Improve) LTS data recovery 
+		(8) [PHYTEC] (Improve) Copy & Insert Machine  any line 
+		(9) [PHYTEC] (Improve) Login using User's Barcode
+		(10) [PHYTEC] (Improve) Save the report option when OLP restarts
+		(11) [LENZE](Resolved) [SM48x] There are 4 sticks in a stick feeder but Opti uses just 2 or some time 1
+		(12) [LENZE](Resolved) T-Feeder log folder is saved under T-Solution not under T-Feeder
+		(13) [LENZE](Resolved) Studio Part reel after unused, if wanted to delete then exception occurred. But not allawys
+		(14) [LENZE](Improve) T-Feeder iTAC Interface
+		(15) [GE] (Resolved) [Reinforce] Too long optimization time
+		(16) [GE] (Resolved) On ExcenFlex HPH, Same feeder allocation is impossible
+		(17) [GE] (Resolved) Traceability issue 
+		(18) [Etech](Resolved) ELITE Memory Issue
+		(19) [Etech](Improve) EXCEN PRO Reel List
+		(20) [Motorola] (Resolved) The SM485 is not transferring light setting changes to TOLP for BGA profile.  Also TOLP is not sending Light settings for BGA profile.
+		(21) [Motorola] (Resolved) The Decan pin 1 indicator information is not being transferred between the machine and T-OLP properly. This has not been noticed because the machine is a chipshooter that places mainly resisters and caps.
+		(22) [HTS] (Resolved) Optimizer result is changed when x/y of placement is cahnaged
+		(23) [HTS] (Resolved) Even and Random LED Distribution 
+		(24) [HTS] (Improve) L800 Board Optimizer performance
+		(25) [HTS] (Resolved) When Importing Part, VN Nozzle is changed to CN Nozzle
+		(26) [HTS/SAMS](Resolved)  Part Delete button is disabled
+		(27) [SSAP] (Resolved) [SSAP] Cycle Time display issue
+		(28) [CROUSE](Resolved) ELITE Crashed when editing a part named "...%..."
+		(29) [SEMI] (Resolved) SME4_1P Feeder Not Recognized by IT Feeder.
+		(30) [SCTAI](Resolved) [VOC-20170378] Import feature T-sol part station
+		(31) [Goerteck] (Resolved) LTS DB inquiring time is too long (Indexing )
+		(32) [TIANMA](Resolved) Equal Zigzag Rank issue
+		(33) [TSE] (Resolved) On Czech language, When Importing CAD, "Please Enter Proper Value" error occured
+		(34) [TSTO/TSEC/HTT](Resolved) EXCENPro V Feeder Pitch is changed
+		(35) [Hanam E.] (Resolved) BOM import > ref Extension  function error
+		(36) [Bestronics] (Resolved) When updating Lead Parameter, Part size is changed
+		(37) [OSTEC] (Resolved) Customer to setup it to ¡°Pneumatic type¡± in the part setting and in the Optimization page
+		(38) [Quamba] (Resolved) Optimize in the DECAN MMI, then Block 2 goes missing after optimize
+		(39) [LGEMA] (Improve) Multi Line DB
+		(40) [SMTech] (Improve) N'job Download
+		(41) [KAIYUE](Improve) SM48x Opmizer performance (Productivity)
+		(42) [BENAVI](Improve) EXCEN PRO BOM Import
+		(43) [Solum] (Improve) SPMM,SPSC(ITS) function is added
+		(44) (Improve) Storage Tower: Batch Requesting function
+
+	3. Compatible Machine SW Version
+		(1) ExcenPro(M)       : 1.760 (LED ú¾)
+		(2) ExcenPro(D)       : 2.100
+		(3) ExcenFlex         : 2.400
+		(4) SM481/482         : 4.430.000.017_NJob_Patch_T18
+		(5) SM400             : 3.901.000.007_NJob_Patch_T18
+		(6) SM400 Plus        : 4.510.006
+		(7) DECANF2           : 5.400.SP7
+		(8) DECAN L Series    : 6.200.SP2
+
+	4. Cautions
+		(1) The PC OS for T-Solution(Server, T-OLP, etc) must be Win7 or higher
+		(2) N'Job Dlowload fuction is avaiable only for SM411/SM481/SM482
+		(3) Release Note Format is changed from v3.310.E11 (3.310.E10 Release Note is attached)
+ 
+
+(End)

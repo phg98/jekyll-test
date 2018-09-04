@@ -1,0 +1,373 @@
+T-Solution 버전: V3.510.000.001
+
+	1. 배포 대상 고객사
+		(1) "EURO.TS.TECH" 포함한 국내 고객 전체
+		(2) MPIQC(캐나다)
+
+	2. 주요 조치/개선 항목(상세 내용 Release 노트 참조)
+		(1) (결함 조치) [Multi Component] T-Studio 만 Upgrade 했을때, Version Mismatch 오류 발생
+		(2) (결함 조치) [MPIQC] [PP] 계획 수량 만큼 생산 했는데, Split-Done으로 표시되는 현상
+		(3) (개선/신규) DECAN S1 추가
+		(4) (개선/신규)  T-Mobile 및 T-Feeder 용 Reel 정보 DB 저장 기능 개발
+
+	3. Machine SW Version
+		(1)  ExcenPro(M)       : 1.760 (LED 向)
+		(2)  ExcenPro(D)       : 2.100
+		(3)  ExcenFlex         : 2.400
+		(4)  SM400             : 3.901.000.007_NJob_Patch_T18
+		(5)  SM400 Plus        : 4.510.006
+		(6)  SM481/482         : 4.430.000.017_NJob_Patch_T18
+		(7)  SM485P 	       : 2.000.SP2_E03
+		(8)  DECAN F2          : 5.400.SP7
+		(9)  DECAN L Series    : 6.200.SP2
+		(10) DECAN S1          : 5.500.000.004
+
+	4. 기타 특이 사항/주의사항
+		(1) T-Solution 이 설치되는 PC 의 OS 는 Win7(Service Pack 1) 이상이어야 함(Win XP 에서는 동작 안됨)
+
+T-Solution 버전: V3.500.000.003
+
+	1. 배포 대상 고객사: 하기 포함한 국내 고객 전체
+		(1) 에텍
+		(2) 신흥정밀
+		(3) 큐엠텍
+		(4) 포시엠
+		(5) 한솔전자 (추가)
+
+	2. 주요 조치/개선 항목(상세 내용 Release 노트 참조)
+		(1)  (결함 조치) [MPIQC] Force Finish 시에 Actual End Date적히지 않음.
+		(2)  (결함 조치) [MPIQC] 생산 종료시  PP 상태가  DONE이 아닌 PLANNED 상태로 표시됨.
+		(3)  (결함 조치) [MPIQC]동일 LotCode를 Top/Bottom Job에서 사용할 경우 Line OLP의 Plan List에서 사라짐.
+		(4)  (결함 조치) [MPIQC] T-Feeder 느려지는 현상
+		(5)  (결함 조치) [MPiQC] Feeder Indexing or ˝PUSH˝ Count at the Machines vs T-OLP 
+		(6)  (결함 조치) [MPIQC] Cycle Time 안맞는 문제
+		(7)  (결함 조치) [LENZE] Optimization attains balanced result in 3 minutes but ran for another 1 hour and 44 minutes
+		(8)  (결함 조치) [LENZE]LineOLP System Update failed. If we retry 2~3 times then work fine.
+		(9)  (결함 조치) [LENZE] LineOLP Job is current, M1,M2,M3 are installed and restared as untitled. Auto PCB is done in M2,M3 but not in M1
+		(10) (결함 조치) [LENZE] When not downloaded job of MultiJobs is clicked still UI is disabled. 
+		(11) (결함 조치) [LENZE] transfer barcode mark in ON issue
+		(12) (결함 조치) [RIM-T] SM421 16M Camera Scale 비정상적으로 받아 들임
+		(13) (결함 조치) [RIM-T] OLP에서 부품 Duplicate 제한적으로 안됨
+		(14) (결함 조치) [RIM-T] PCB import 후 Job 생성시 M2 장비 최적화 완료되어 있는 상태로 표시됨
+		(15) (결함 조치) [RIM-T] Polygon 부품 Tray에 배치 안됨
+		(16) (결함 조치) [솔루엠] SPMM 출력 바코드 인식 안됨(자재 바코드는 인식 잘됨)
+		(17) (결함 조치) [솔루엠] 자재 릴 바코드 가운데 이동, 가끔 바코드가 짤려 재발행함
+		(18) (결함 조치) [화지에] LED 장착 시퀀스 이상
+		(19) (결함 조치) [OSTEC] UPD Import 시 Hang 됨
+		(20) (결함 조치) [포시엠] VOC-20171192-SM481L PLUS Optimizer Deep 설정 시 생산 Step 배열 이상 
+		(21) (결함 조치) [Optimizer] Pallet Sequence 오류 수정 + Tray 부품 높이 반영 수정
+		(22) (결함 조치) [All] Collision Check 비 정상 및 비효율 Nozzle Change 件 수정
+		(23) (결함 조치) [LB] 1,2,3호기 할당가능 부품이 1,2호기에만 할당되는 현상
+		(24) (결함 조치) [OLP] 최적화 종료 후 OLP 응답없음 및 OLP 강제 종료
+		(25) (결함 조치) [Optimizer] SM485 Simulation 변동
+		(26) (결함 조치) Incremental 최적화시 Optimizer Crash
+		(27) (결함 조치) LineOLP 에서 Not Supported System version‘ error 메세지 표시 현상
+		(28) (개선/신규) [SM485P] Virtual Part: 고객이 작성한 순서를 유지한 상태에서 최적화 수행되도록 개선
+		(29) (개선/신규) [SM485P] Radial Feeder 추가 / 특수 Pitch 대응_OLP
+		(30) (개선/신규) [SM485P] SGR_User 노즐 3종 추가
+		(31) (개선/신규) [SM485P] Pre-Motion기능 추가 개발
+		(32) (개선/신규) [SM485P] Stick Type Feeder Unit SW 대응 수량(32) 변경 
+		(33) (개선/신규) [SM485P] Block 최대 개수 10으로 변경
+		(34) (개선/신규) [Multi Component] Production Summary default change to CPH.
+		(35) (개선/신규) [Multi Component] The Cycle time of Cycle-Head view does not refreshed on the Optimization  result view.
+		(36) (개선/신규) [MPIQC] Multi Stick Feeder 여러 개 걸려있는 경우 골고루 할당되도록 기능 추가
+		(37) (개선/신규) [MPIQC]Skipped Out Parts ($$EMPTYPARTNAME$$) at programming stage get listed on the OPT file steps for the 
+		(38) (개선/신규) [LENZE] Wants LineBased Pre-BOM check  for LineController with iTAC _ result 값 변경외
+		(39) (개선/신규) [LGEMA] [MultiJOb최적화] incremental(All) 최적화 진행 중 도중 실패나면 기존 진행된 내용에 대해 저장할 수 있도록 개선요망
+		(40) (개선/신규) [ostec]: Optimizer issue twin and takes more than 20min
+		(41) (개선/신규) [솔루엠] SPMM에서 크림 솔더 바코드 출력 시 '폐기일자'를 넣을 수 있는 바코드 라벨상의 공간 필요
+		(42) (개선/신규) [AEGIS]  Traceability 관련 MES Interface를 위해  Stored Procedure + View Table 제공
+		(43) (개선/신규) [Optimizer] Very Quick Option 변경 (기존 Search Depth Quick을 Very Quick으로)
+		(44) (개선/신규) Studio > LM >  IP 및 장비명 Cell Click시, 수정 모드로 변경
+		(45) (결함 조치) [Birkholz] 부품 Pick Type 값이 없으면, 최적화 돌기 전 에러메시지가 나오도록 수정
+		(46) (개선/신규) Studio Job Clear 기능 보완 생산완료 Count 입력 받도록 변경
+
+	3. Machine SW Version
+		(1) ExcenPro(M)       : 1.760 (LED 向)
+		(2) ExcenPro(D)       : 2.100
+		(3) ExcenFlex         : 2.400
+		(4) SM481/482         : 4.430.000.017_NJob_Patch_T18
+		(5) SM400             : 3.901.000.007_NJob_Patch_T18
+		(6) SM400 Plus        : 4.510.006
+		(7) DECANF2           : 5.400.SP7
+		(8) DECAN L Series    : 6.200.SP2
+
+	4. 기타 특이 사항/주의사항
+		(1) T-Solution 이 설치되는 PC 의 OS 는 Win7(Service Pack 1) 이상이어야 함(Win XP 에서는 동작 안됨)
+
+T-Solution 버전: V3.400.E05.001
+
+	1. 배포 대상 고객사: 하기 포함한 전체 고객
+		(1) SOLU-M
+		(2) RIM-T
+
+
+	2. 주요 조치/개선 항목(상세 내용 Release 노트 참조)
+		(1) (결함 조치) [솔루엠] SPMM 출력 바코드 인식 안됨(자재 바코드는 인식 잘됨)
+		(2) (결함 조치) [솔루엠] 자재 릴 바코드 가운데 이동, 가끔 바코드가 짤려 재발행함
+		(3) (결함 조치) [RIM-T] PCB import 후 Job 생성시 M2 장비 최적화 완료되어 있는 상태로 표시됨
+		(4) (결함 조치) [LENZE] transfer barcode mark in ON issue
+		(5) (결함 조치) [RTM-T] Polygon 부품 Tray에 배치 안됨
+		(6) (결함 조치) [LENZE]LineOLP System Update failed. If we retry 2~3 times then work fine.
+		(7) (결함 조치) [자주] Twin 조건에 맞게 Tray Feeder가 바르게 선배치되어 있는데, 에러 출력
+		(8) (개선/신규) [솔루엠] SPMM에서 크림 솔더 바코드 출력 시 '폐기일자'를 넣을 수 있는 바코드 라벨상의 공간 필요
+		(9) (개선/신규) [LENZE] Wants LineBased Pre-BOM check  for LineController with iTAC _ result 값 변경외
+
+
+	3. Machine SW Version
+		(1) ExcenPro(M)       : 1.760 (LED 向)
+		(2) ExcenPro(D)       : 2.100
+		(3) ExcenFlex         : 2.400
+		(4) SM481/482         : 4.430.000.017_NJob_Patch_T18
+		(5) SM400             : 3.901.000.007_NJob_Patch_T18
+		(6) SM400 Plus        : 4.510.006
+		(7) DECANF2           : 5.400.SP7
+		(8) DECAN L Series    : 6.200.SP2
+
+	4. 기타 특이 사항/주의사항
+		(1) T-Solution 이 설치되는 PC 의 OS 는 Win7(Service Pack 1) 이상이어야 함(Win XP 에서는 동작 안됨)
+
+T-Solution 버전: V3.400.E04.001
+
+	1. 배포 대상 고객사: 하기 포함한 전체 고객
+		(1) Motorola
+		(2) CROUSE
+		(3) Ostec
+
+
+	2. 주요 조치/개선 항목(상세 내용 Release 노트 참조)
+		(1) (결함 조치) Feeder Pitch Cycle Check 이상 있을 경우 Warning 으로 처리
+		(2) (결함 조치) [모토롤라] SKIP된 장착점이 없는 TRAY부품 OPTIMIZER수행시  NON SPLIT ERROR 발생
+		(3) (결함 조치) [모토롤라] T-Solution의 부품 정보에 Camera Auto로 되어 있는 경우 조명값 0,0,0 으로 변경됨
+		(4) (결함 조치) [모토로라] SupplyAngle 45도 단위로 회전된 경우, 피더 피치 사이클 체크  이상.
+		(5) (결함 조치) [모토로라]장착점 없고,부품은 존재 (Not skip), TrayPart가 선배치(Not Skip) 상태. & AutoSplit 옵션 = 0인경우, LB 에러 발생
+		(6) (결함 조치) [Crouse] 1번핀 위치 표시 오류
+		(7) (결함 조치) [오스텍] T-Part에서 릴 DB삭제 불가 문제
+
+
+	3. Machine SW Version
+		(1) ExcenPro(M)       : 1.760 (LED 向)
+		(2) ExcenPro(D)       : 2.100
+		(3) ExcenFlex         : 2.400
+		(4) SM481/482         : 4.430.000.017_NJob_Patch_T18
+		(5) SM400             : 3.901.000.007_NJob_Patch_T18
+		(6) SM400 Plus        : 4.510.006
+		(7) DECANF2           : 5.400.SP7
+		(8) DECAN L Series    : 6.200.SP2
+
+	4. 기타 특이 사항/주의사항
+		(1) T-Solution 이 설치되는 PC 의 OS 는 Win7(Service Pack 1) 이상이어야 함(Win XP 에서는 동작 안됨)
+
+T-Solution 버전: V3.400.E03.002
+
+	1. 배포 대상 고객사: 하기 포함한 전체 고객
+		(1) Phytec
+		(2) SVI
+		(3) LENZE
+		(4) Henny Penny
+		(5) MPiQC
+		(6) 화루이
+		(7) 포씨엠
+		(8) EVER ELETTRONICA
+		(9) SIEL
+		(10) 큐엠테크
+		(11) 뉴하이텍
+		(12) 유성전자
+
+	2. 주요 조치/개선 항목(상세 내용 Release 노트 참조)
+		(1) (결함 조치) [뉴하이텍] 보드 밖 장착점 존재 메세지 발생
+		(2) (결함 조치) [화루이]EXCEN PRO LED 최적화 시퀀스 문제 
+		(3) (결함 조치) [포씨엠] (VOC-20171193) SM481LPlus 고객사 OPT 실행시 Quick 으로 실행하겠냐는 메시지창이 뜨지 않음
+		(4) (결함 조치) [Phytec][Optimizer] Optimization is not optimal in Multijobs 
+		(5) (결함 조치) [SM485P] NPE 레이져 조명 선택 불가 문제
+		(6) (결함 조치) [EVER ELETTRONICA][T-Studio] 부품명에 ˝/˝ 검색안됨 
+		(7) (결함 조치) [SIEL] ExcenPro Fiducial error.(Fiducial Number :0)
+		(8) (결함 조치) [수원-큐엠테크] Z값 변경건 
+		(9) (결함 조치) [MPiQC] 리드 부품 Total Size 동기화 관련 이슈 
+		(10) (개선/신규) [Phytec] 2D Barcode를 장착점처럼 고려하여 Cycle 구성(2D barcode in the Step)
+		(11) (개선/신규) [Phytec] 라인셋업 정보에 LineCode, LineName 에 추가적으로 LineID를 추가
+		(12) (개선/신규) [Phytec] 2D Barcode 관련 인터페이스 변경 
+		(13) (개선/신규) [Phytec]Remove CC for Pitch check when feeder is Non-Elec feeder.
+		(14) (개선/신규) [MPiQC]SM481/482 USmall 특수 노즐 추가
+		(15) (개선/신규) [LENZE][ITS][Improve]Usability, after deleting the last reelcode then scrool moves to 1st row. Need to retain the previous selection.
+		(16) (개선/신규) [LENZE] Wants LineBased Pre-BOM check  for LineController with iTAC
+		(17) (개선/신규) [SVI]  t it Basic 시스템 개선 Batch / Running 정보 추가
+		(18) (개선/신규) [Henny Penny] 806 component parts pitch has no CC error in T-Sol but SM471 machine gives error
+
+	3. Machine SW Version
+		(1) ExcenPro(M)       : 1.760 (LED 向)
+		(2) ExcenPro(D)       : 2.100
+		(3) ExcenFlex         : 2.400
+		(4) SM481/482         : 4.430.000.017_NJob_Patch_T18
+		(5) SM400             : 3.901.000.007_NJob_Patch_T18
+		(6) SM400 Plus        : 4.510.006
+		(7) DECANF2           : 5.400.SP7
+		(8) DECAN L Series    : 6.200.SP2
+
+	4. 기타 특이 사항/주의사항
+		(1) T-Solution 이 설치되는 PC 의 OS 는 Win7(Service Pack 1) 이상이어야 함(Win XP 에서는 동작 안됨)
+                (2) T-Solution 을 설치하기 위해서는 Internet 연결이 되어야 함
+
+T-Solution 버전: V3.400.E02.004
+
+	1. 배포 대상 고객사: 하기 포함한 전체 고객
+		(1) 티엔마 웨이사
+		(2) LGEMA
+		(3) Birkholz
+		(4) Bestronics
+		(5) SMTech
+		(6) SAM Electornics
+		(7) 하이신
+		(8) 에텍
+		(9) SVI
+		(10) LENZE
+
+	2. 주요 조치/개선 항목(상세 내용 Release 노트 참조)
+		(1) (결함 조치) Excen Pro Non-Independent Mode 에서 Side Tray 2개 설치 후 최적화시 실패
+		(2) (결함 조치) Rank Option 사용 時 한 Array 내 Y Offset Check 기능 삭제
+                (3) (결함 조치) 미등록부품 Drag & Drop 미동작 이슈
+                (4) (결함 조치) ELITE PCB Import 시 Source와 Target이 바뀌는 이슈 발생
+                (5) (결함 조치) T-Basic 및 IT SET UP TOOL 에서  PCI DNMB Driver 미포함 문제 조치
+                (6) (결함 조치) Centroid Offset  설정 후 UPD 정보로 저장시, 저장 안됨
+                (7) (결함 조치) Report 기능 사용시, 부품 description 짤림. 용지 방향 가로/세로 설정 모두 짤려서 보임
+                (8) (결함 조치) Decan 장비 system update시, 에러 발생
+                (9) (결함 조치) DecanS2  Default system 데이터 오류 
+                (10) (결함 조치) 장비와 OLP간 연결끊어진 상태에서 장비PCB 파일 오픈되는 경우, 재연결시 이전 모델로 복구되는 현상
+                (11) (결함 조치) NonIndep, 2 개의 SideTray >  Integrity Check Error 발생
+		(12) (개선/신규) Windows 10 OS 지원
+		(13) (개선/신규) SM 장비에서 부품 파라미터 자동화 기능 추가
+		(14) (개선/신규) Import 창 Line DB 선택 기능 추가
+		(15) (개선/신규) T-OLP에서 Block 4개로 된 엑셀 파일을 불러 오는 방법
+		(16) (개선/신규) Independent Twin, Side Tray Pallet 전후면 분리 사용의 UI 개선 검토
+		(17) (개선/신규) Tantal 에 LED Rank 기능 추가
+		(18) (개선/신규) ReelCode if not found in Hanwha DB then auto register from iTAC
+		(19) (개선/신규) Double scan barcode fail to inspect when there is gap inbetween the panel
+		(20) (개선/신규) Check the count of tray component" message is displayed when fill tray and scanned a tray barcode
+		(21) (개선/신규) Wants Stick/Tray Same Lot code in Multiple Slots for the same part name.
+
+
+	3. Machine SW Version
+		(1) ExcenPro(M)       : 1.760 (LED 向)
+		(2) ExcenPro(D)       : 2.100
+		(3) ExcenFlex         : 2.400
+		(4) SM481/482         : 4.430.000.017_NJob_Patch_T18
+		(5) SM400             : 3.901.000.007_NJob_Patch_T18
+		(6) SM400 Plus        : 4.510.006
+		(7) DECANF2           : 5.400.SP7
+		(8) DECAN L Series    : 6.200.SP2
+
+	4. 기타 특이 사항/주의사항
+		(1) T-Solution 이 설치되는 PC 의 OS 는 Win7 이상이어야 함(Win XP 에서는 동작 안됨)
+                (2) T-Solution 을 설치하기 위해서는 Internet 연결이 되어야 함
+
+T-Solution 버전: V3.400.E01.001
+
+	1. 배포 대상 고객사: 하기 포함한 전체 고객
+		(1) 하지에
+                (2) SMTech
+                (3) LGEMA
+                (4) SAMEX
+		(5) TSTO
+		(6) SVI
+		(7) LENZE
+
+	2. 주요 조치/개선 항목(상세 내용 Release 노트 참조)
+                (1) (결함 조치) BGA 부품 Auto-Teach 오작동 이슈
+		(2) (결함 조치) T-BasicFeeder SME 88mm 미지원 
+		(3) (결함 조치) T-Basic Feeder DNMB 지원
+		(4) (결함 조치) StartPage > 생성한 Job이 표시 안되고, Refresh 버튼 클릭시 Exception 발생 
+		(5) (결함 조치) LineOLP> Job Open시 Exception 발생 (Gerber 화일 동적 Loading 기능 적용)
+		(6) (결함 조치) 411F Use2Tray 사용시 CycleNG 발생
+		(7) (결함 조치) Step에서 노즐 정보가 숫자(2424836) 로 표시됨
+		(8) (결함 조치) 현재 티솔 DB설치 시 SP가 자동 셋업되지 않고, 수동으로 설치해야하는 문제
+		(9) (개선/신규) EXCEN PRO 및 SM(SM471Plus) System Version Up (SW 사용 기간 제한 기능 적용)
+		(10) (개선/신규) Slot + container not found message improvement
+		(11) (개선/신규) 인터락기능 장비 외부에서 멈추도록 개선
+		(12) (개선/신규) Global/Local 2D바코드 매칭 기능
+
+
+	3. Machine SW Version
+		(1) ExcenPro(M)       : 1.760 (LED 向)
+		(2) ExcenPro(D)       : 2.100
+		(3) ExcenFlex         : 2.400
+		(4) SM481/482         : 4.430.000.017_NJob_Patch_T18
+		(5) SM400             : 3.901.000.007_NJob_Patch_T18
+		(6) SM400 Plus        : 4.510.006
+		(7) DECANF2           : 5.400.SP7
+		(8) DECAN L Series    : 6.200.SP2
+
+	4. 기타 특이 사항/주의사항
+		(1) T-Solution 이 설치되는 PC 의 OS 는 Win7 이상이어야 함(Win XP 에서는 동작 안됨)
+		(2) 복수 모델 순차 기종 변경 기능은 SM411/SM481/SM482 모델에서만 동작됨 (관련 Patch 버전(T18)을 설치해야함)
+
+
+T-Solution 버전: V3.400.000.008
+
+	1. 배포 대상 고객사
+		하기 포함한 전체 고객
+		(1) LGEMA (VOC: Line DB)
+		(2) HTS (VOC: Even and Random LED Distribution)
+
+	2. 주요 조치/개선 항목(상세 내용 Release 노트 참조)
+		(1) [PHYTEC] (결함 조치) 2D-Label-Feeder for rear Gantry in Slot R53 first, then an message appears that is not easy to read.
+		(2) [PHYTEC] (결함 조치) During PCB import not to assign machine automatically
+		(3) [PHYTEC] (결함 조치) Delete recusively for cutomer but manay boards
+		(4) [PHYTEC] (결함 조치) Missing Pin 초기화 되는 문제
+		(5) [PHYTEC] (결함 조치) Flux device on master is not saved
+		(6) [PHYTEC] (개선/신규)[T-Feeder][T-BasicFeeder] 관리자권한 적용
+		(7) [PHYTEC] (개선/신규)LTS data recovery 
+		(8) [PHYTEC] (개선/신규)Copy & Insert Machine  any line 
+		(9) [PHYTEC] (개선/신규)LogIn>  사용자ID 바코드 입력 로그인
+		(10) [PHYTEC] (개선/신규)Save the report option when OLP restarts
+		(11) [LENZE](결함 조치) There are 4 sticks in a stick feeder but Opti uses just 2 or some time 1.
+		(12) [LENZE](결함 조치) T-Feeder log folder is saved under T-Solution not under T-Feeder. Why? When all other applications save under respective app.
+		(13) [LENZE](결함 조치) Studio Part reel after unused, if wanted to delete then exception occurred. But not allawys
+		(14) [LENZE](개선/신규) T-Feeder iTAC 인터페이스 개발
+		(15) [GE] (결함 조치) [Reinforce] 최적화 시간이 너무 오래걸리는 이슈
+		(16) [GE] (결함 조치) ExcenFlexHPH에서 멀티잡 최적화 시, 전후면 동일 배치 불가능 件
+		(17) [GE] (결함 조치) Traceability issue 
+		(18) [에텍] (결함 조치) ELITE 메모리 부족 이슈 1차
+		(19) [에텍] (개선/신규)EXCEN PRO 릴리스트 출력 문제 검토 요청의 건
+		(20) [Motorola] (결함 조치) The SM485 is not transferring light setting changes to TOLP for BGA profile.  Also TOLP is not sending Light settings for BGA profile.
+		(21) [Motorola] (결함 조치) The Decan pin 1 indicator information is not being transferred between the machine and T-OLP properly. This has not been noticed because the machine is a chipshooter that places mainly resisters and caps.
+		(22) [자오츠/정남전자[OPT] (결함 조치) 장착점 위치 티칭에 따른 LED board 최적화 결과 변동
+		(23) [하이지아] (결함 조치) Even and Random LED Distribution 
+		(24) [자오츠/정남전자] (개선/신규)L800 보드 끝단 최적화 개선 요청
+		(25) [동방통신] (결함 조치) ELITE Part Import 시 VN Nozzle -> CN Nozzle 변경되는 이슈
+		(26) [동방통신/SMANS](결함 조치) 부품 Delete 버튼 비활성화 이유
+		(27) [SSAP] (결함 조치) T-OLP 최적화 시 Cycle Time 이상표기 건 
+		(28) [CROUSE](결함 조치) %가 포함된 부품 편집시 타 ELITE에서 Crash 되는 문제
+		(29) [SEMI] (결함 조치) SME4_1P Feeder Not Recognized by IT Feeder.
+		(30) [SCTAI](결함 조치) [VOC-20170378] Import feature T-sol part station [Merge artf82823]
+		(31) [고어텍] (결함 조치) LTS DB 조회 속도 느림(Indexing )
+		(32) [TIANMA/샤먼](결함 조치) RANK 방식이 Equal Zigzag일때 결과 이상
+		(33) [TSE] (결함 조치) 체코 언어 사용하는 PC에서, CAD Import 시,"Please Enter Proper Value" 에러 발생. 
+		(34) [TSTO/TSEC/HTT][UPD](결함 조치) EXCENPro V Feeder Pitch 자동 변경되는 이슈
+		(35) [하남전자] (결함 조치) BOM import > ref Extension  기능 오류
+		(36) [Bestronics](결함 조치) UPE UserIC 부품 Lead Parameter 업데이트 시 Part 사이즈 자동으로 변경되는 문제
+		(37) [OSTEC] (결함 조치) customer to setup it to “Pneumatic type” in the part setting and in the Optimization page
+		(38) [Quamba](결함 조치) Optimise in the DECAN MMI, then Block 2 goes missing after optimize
+		(39) [LGEMA](개선/신규) Multi Line DB
+		(40) [SMTech](개선/신규) 복수 모델 순차 기변
+		(41) [카이위에](개선/신규) 생산성 개선 (SM482기준)
+		(42) [BENAVI] (개선/신규)EXCEN PROBOM Import 개선
+		(43) [Solum] (개선/신규)SPMM,SPSC 기능 추가
+		(44) (개선/신규)Storage Tower 일괄불출기능
+
+	3. Machine SW Version
+		(1) ExcenPro(M)       : 1.760 (LED 向)
+		(2) ExcenPro(D)       : 2.100
+		(3) ExcenFlex         : 2.400
+		(4) SM481/482         : 4.430.000.017_NJob_Patch_T18
+		(5) SM400             : 3.901.000.007_NJob_Patch_T18
+		(6) SM400 Plus        : 4.510.006
+		(7) DECANF2           : 5.400.SP7
+		(8) DECAN L Series    : 6.200.SP2
+
+	4. 기타 특이 사항/주의사항
+		(1) T-Solution 이 설치되는 PC 의 OS 는 Win7 이상이어야 함(Win XP 에서는 동작 안됨)
+		(2) 복수 모델 순차 기종 변경 기능은 SM411/SM481/SM482 모델에서만 동작됨 (관련 Patch 버전(T18)을 설치해야함)
+		(3) 3.310.E11 부터는 Release Note 양식 변경됨(3.310.E10 까지의 Release 노트 별도 첨부함)
+
+
+(이상)
